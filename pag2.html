@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetly</title>
+  <link rel="stylesheet" href="pag2.css?v=hard">
+</head>
+<body>
+<div class="boas-vindas">
+  <h1>Meetly</h1>
+  
+  <h2>Escolha um horário disponível, digite seu nome e confirme o agendamento.</h2>
+  
+  <div class="resumo-cards">
+    <div class="card-resumo">Total: <span id="totalHorarios">0</span></div>
+    <div class="card-resumo disponiveis">Disponíveis: <span id="totalDisponiveis">0</span></div>
+    <div class="card-resumo agendados">Agendados: <span id="totalAgendados">0</span></div>
+  </div>
+
+  <div class="formulario">
+    <label for="nome">Nome do participante:</label>
+    <input type="text" placeholder="Digite seu nome" id="nome">
+    
+    <div class="botoes">
+      <button id="confirmarBtn">Confirmar</button>
+      <button id="cancelarBtn" class="cancelar">Cancelar</button>
+    </div>
+    
+    <p id="mensagem"></p>
+  </div> 
+
+  <h2>Horários</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Horário</th>
+        <th>Status</th>
+        <th>Participante</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaCorpo"></tbody>
+  </table>
+</div> 
+
+  <script src="pag2.js?v=hard"></script>
+</body>
+</html>
