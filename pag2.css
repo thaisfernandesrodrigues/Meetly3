@@ -7,13 +7,6 @@ body, html {
   min-height: 100vh;
   font-family: sans-serif;
   background-color: #f7f9fc;
-/*estilizando o fundo*/
-background: radial-gradient(
-    circle at 50% 35%, 
-    rgba(155, 89, 182, 0.6) 0%,
-    rgba(212, 170, 240, 0.3) 45%,
-    #f7f9fc 100%
-  ) no-repeat fixed; 
 }
 
 .boas-vindas {
@@ -25,6 +18,13 @@ background: radial-gradient(
   align-items: center;
   padding: 60px 20px; 
   box-sizing: border-box;
+  /*estilizando o fundo*/
+background: radial-gradient(
+    circle at 50% 35%, 
+    rgba(155, 89, 182, 0.6) 0%,
+    rgba(212, 170, 240, 0.3) 45%,
+    #f7f9fc 100%
+  ) no-repeat fixed; 
 } 
  
 
