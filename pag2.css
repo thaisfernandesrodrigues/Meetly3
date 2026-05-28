@@ -7,6 +7,7 @@ body, html {
   min-height: 100vh;
   font-family: sans-serif;
   background-color: #f7f9fc;
+
 }
 
 .boas-vindas {
@@ -228,4 +229,43 @@ tr.linha-selecionada {
 .texto-agendado {
   color: #c0392b;
   font-weight: bold;
+}
+
+/*pra que fique adquado a celular*/
+@media (max-width: 600px) {
+  
+  /* diminuindo o titulo */
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  /*dando  o espacinho interno*/
+  .boas-vindas {
+    padding: 30px 15px;
+  }
+
+  /*ajeitando os cards em relação a responsividade*/
+  .resumo-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /*ajeitando os btns em relaçao a responsividade*/
+  .botoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /*ajeitando a tabela em relaçao a responsividade*/
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* adequar a tela*/
+    white-space: nowrap; /*pra que a linha nao vá quebrar*/
+  }
 }
